@@ -41,5 +41,10 @@ function showData(){
 }
 
 
+function allClear(){
+  localStorage.clear();
+  listContainerEl.innerHTML='';
+}
+
 // to show data from local storage when website is closed and re-opened
 showData();

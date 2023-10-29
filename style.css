@@ -56,6 +56,28 @@ input {
   transform: scale(1.5);
 }
 
+.button-clear{
+  
+  width: 100%;
+  height: 45px;
+  padding: 10px auto;
+  
+  border-radius: 10px; 
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+
+  background-color: rgb(48, 44, 44);
+  color: bisque;
+
+  font-size: 19px;
+}
+
+.button-clear:hover{
+  background-color: rgb(183, 52, 9);
+  color: white;
+  
+}
+
 ul li {
   user-select: none;
   list-style: none;
@@ -110,3 +132,4 @@ span{
   line-height:40px;
   border-radius:50%;
 }
+
