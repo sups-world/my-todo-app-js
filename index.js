@@ -3,7 +3,11 @@ const listContainerEl = document.getElementById("display-tasks")
 
 
 
-
+listContainerEl.addEventListener("click",(e) => {
+    if(e.target.tagName === "LI"){
+        e.target.classList.toggle("checked");
+    }
+},false)
 
 function addTask(){
   if (inputEl.value === ''){
