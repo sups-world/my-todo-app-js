@@ -55,3 +55,25 @@ input{
     color:white;
     transform:scale(1.2)
 }
+
+ul li{
+    user-select: none;
+    list-style: none;
+    position: relative;
+    padding:12px 8px 12px 50px;
+    font-size:20px;
+}
+
+ul li::before{
+    content:'';
+    position: absolute;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    height:30px;
+    width:30px;
+    /* these below position the image right before the text */
+    top: 12px;
+    left: 10px;
+    
+}
