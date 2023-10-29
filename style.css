@@ -62,11 +62,16 @@ ul li {
   position: relative;
   padding: 12px 8px 12px 50px;
   font-size: 20px;
+
+  display:flex;
+  justify-content: space-between;
+
+  transition:background-color 0.3s ease-in-out;
 }
 
 
 ul li:hover{
-    transform:scale(1.2)
+    background-color: rgb(54, 54, 54);
 }
 ul li::before {
   content: "";
@@ -90,4 +95,18 @@ ul li.checked {
 
 ul li.checked::before {
   background-image: url(images/checked.png);
+}
+
+span{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right:0;
+  top:5px;
+  font-size:40px;
+  color:red;
+  font-weight: bolder;
+  text-align:center;
+  line-height:40px;
+  border-radius:50%;
 }
